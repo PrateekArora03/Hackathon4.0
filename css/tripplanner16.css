@@ -1,0 +1,750 @@
+/* //// Old should have //// */
+.wrap-tab{
+	border-top: #eeeeee 1px dashed;
+    border-bottom: #eeeeee 1px dashed;
+    width: 100%;
+    display: block;
+    float: left;
+}
+.tab-part{
+	padding: 15px 20px 10px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nopadding{
+	padding: 0px !important;
+}
+@media only screen and (min-width: 1091px) {
+	.btn-ipad{
+		float: right;
+		/*margin-right: 12px; */
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1090px) {
+	.btn-ipad{
+		float: none;
+		display: block;
+		margin-top: 5px;
+	}
+	.btn-ipad-left{
+		float: left;
+		margin-right: 5px;
+	}
+	.bar-menu{
+		margin-top: 20px;
+		float: left;
+    width: 100%;
+    height: 64px;
+	}
+	.header-menu .bar-menu > ul > li {
+		height: 44px;
+	}
+}
+
+/* //// Update for Tripplanner 2016 //// */
+.border-top{border-top: 1px dashed #eeeeee;}
+.border-bottom{border-bottom: 1px dashed #eeeeee;}
+.padding-top{padding-top: 15px;}
+.padding-bottom{padding-bottom: 15px;}
+.noheadline{padding-top: 45px;}
+.text-left{text-align: left !important;}
+.form-control-calendar{
+    position: absolute;
+	right: 30px;
+    top: 34px;
+}
+
+/* My trip */
+.wrap-content.margin-tp16{
+	margin-top: 0px;
+}
+	@media only screen and (max-width: 767px) {
+		.wrap-content.margin-tp16{
+			margin-top: 15px;
+		}
+	}
+.section-btncontrol{
+	float: left;
+	width: 100%;
+}
+	.section-btncontrol .left{
+		float: left;
+	}
+	.section-btncontrol .right{
+		float: right;
+	}
+	@media only screen and (max-width: 767px) {
+		.section-btncontrol .left{
+			width: 100%;
+		}
+		.section-btncontrol .right{
+			width: 100%;
+		}
+		.section-btncontrol .left > button{
+			margin-bottom: 15px;
+			width: 100%;
+		}
+		.section-btncontrol .right > button{
+			width: 32.7%;
+			box-sizing: border-box;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		.section-btncontrol .right > button{
+			width: 100%;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+	}
+
+/* My trip */
+.wrap-tp16-sidebar{
+	position: relative;
+	width: 100%;
+	max-width: 1170px;
+	/*display: table;*/
+}
+.tp16-sidebar{
+	/*float: left;*/
+	/*position: absolute;*/
+	top: 0px;
+	bottom: auto;
+	/*width: 100%;*/
+	/* border-left: 1px dashed #eeeeee; */
+	/* padding: 0px 15px; */
+	/* margin-top: 30px; */
+	box-sizing: border-box;
+}
+	.tp16-sidebar > ul.tp16-day{
+		position: relative;
+		float: left;
+		width: 100%;
+		padding: 0px 0px 15px 15px;
+		margin: 0px 5px;
+		box-sizing: border-box;
+		list-style: none;
+		border-left: #eeeeee dashed 1px;
+	}
+		.tp16-sidebar > ul.tp16-day > li.title-dest{
+			/* position: relative; */
+			font-size: 20px;
+			font-weight: bold;
+			padding-bottom: 15px;
+		}
+			.tp16-sidebar > ul.tp16-day > li.title-dest::before{
+				content: ' ';
+				position: absolute;
+				top: 5px;
+				left: -5px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #1f6db8;
+			}
+		/* edit : old calendar */
+		.tp16-sidebar > ul.tp16-day > li.seclecter-day{
+			float: left;
+			width: 42px;
+			height: 84px;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day .calendar-date > .top{
+				border: 1px solid #eeeeee;
+			}
+			/* hover */
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day:hover .calendar-date:before{
+				border-top-color: #1f6db8;
+			}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day:hover .calendar-date > .top{
+				border: 1px solid #1f6db8;
+			}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day:hover .calendar-date > .middle{
+				border-left: 1px solid #1f6db8;
+				border-right: 1px solid #1f6db8;
+			}
+			/* selected */
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day.selected{
+				cursor: default;
+			}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day.selected .calendar-date:before{
+				border-top-color: #1f6db8;
+			}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day.selected .calendar-date > .top{
+				border: 1px solid #1f6db8;
+			}
+			.tp16-sidebar > ul.tp16-day > li.seclecter-day.selected .calendar-date > .middle{
+				border-left: 1px solid #1f6db8;
+				border-right: 1px solid #1f6db8;
+			}
+	/* List view */
+	ul.tp16-listview{
+		float: left;
+		width: 100%;
+		list-style: none;
+		padding: 15px 0px 0px;
+		margin: 0px;
+	}
+		ul.tp16-listview li.tp16-listbox{
+			float: left;
+			width: 100%;
+			padding: 15px;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+			border: 1px solid #eeeeee;
+		}
+			ul.tp16-listview li.tp16-listbox .trip-startend{}
+			ul.tp16-listview li.tp16-listbox .trip-route{
+				float: left;
+				width: 100%;
+				padding: 10px;
+				box-sizing: border-box;
+				margin: 15px;
+				border-left: 1px dashed #eeeeee;
+			}
+				ul.tp16-listview li.tp16-listbox .trip-route .detail{
+					display: inline;
+				}
+				ul.tp16-listview li.tp16-listbox .trip-route .open{
+					display: inline;
+					text-align: right;
+				}
+				.route-inner{}
+		/* custom bt */
+		.panel-default>.panel-heading{
+			border: none;
+			background: none;
+		}
+		.panel{
+			border: none;
+			box-shadow: none;
+		}
+		.panel-group{margin-bottom: 0px;}
+		.panel-heading{
+			float: left;
+			width: 100%;
+			padding-bottom: 0px;
+		}
+		.panel-title{
+			float: left;
+			width: 100%;
+			font-size: 14px;
+		}
+			.panel-title a:hover{color: #1f6db8;}
+			.panel-title .detail{
+				float: left;
+				width: 75%;
+			}
+			.panel-title .open{
+				float: left;
+				width: 25%;
+				text-align: right;
+				font-size: 14px;
+			}
+		.route-inner{padding: 0px 15px;}
+			.route-inner > ul.select-route{
+				float: left;
+				width: 100%;
+				list-style: none;
+				padding: 15px 0px 0px;
+				margin-top: 0px;
+			}
+				.route-inner > ul.select-route > li{
+					float: left;
+					width: 100%;
+					padding: 10px;
+					cursor: pointer;
+					border: 1px solid #ffffff;
+				}
+					.route-inner > ul.select-route > li:hover{
+						border: 1px solid #eeeeee;
+					}
+					.route-inner > ul.select-route > li.selected{
+						position: relative;
+						background: #eeeeee;
+						border: 1px solid #eeeeee !important;
+						cursor: default;
+					}
+					.route-inner > ul.select-route > li.selected:after{
+						font-family: 'FontAwesome';
+						content: "\f00c";
+						position: absolute;
+						top: 10px;
+						right: 10px;
+					}
+					.route-inner > ul.select-route > li .icon{
+						display: inline-block;
+						width: 24px;
+						text-align: center;
+						color: #1f6db8;
+						font-size: 20px;
+						margin-right: 5px;
+					}
+					.route-inner > ul.select-route > li .route{
+						padding-bottom: 15px;
+					}
+			/* Day trip */
+			
+			.trip-title{
+				float: left;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+				.trip-title span{
+					display: inline-block;
+					font-size: 20px;
+					font-weight: bold;
+				}
+				.trip-title p{
+					display: inline-block;
+					margin: 0px;
+				}
+			ul.tp16-listview li.tp16-listbox .trip-title{
+				float: left;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+				ul.tp16-listview li.tp16-listbox .trip-title span{
+					display: inline-block;
+					font-size: 20px;
+					font-weight: bold;
+				}
+				ul.tp16-listview li.tp16-listbox .trip-title p{
+					display: inline-block;
+					margin: 0px;
+				}
+			/* inner box */	
+			.trip-content{
+				float: left;
+				width: 100%;
+				border: 4px solid #ffffff;
+				cursor: pointer;
+			}
+				.trip-content:hover{border: 4px solid #eeeeee;}
+				/* Content Box */
+				.trip-content .content-box{
+					min-height: 151px;
+					border: 1px solid #eeeeee;
+				}
+				.trip-content .content-box .image{
+					position: relative;
+					float: left;
+					width: 150px;
+					height: 150px;
+					overflow: hidden;
+				}
+					@media only screen and (max-width: 767px){
+						.trip-content .content-box .image{
+							width: 100%;
+							height: auto;
+						}
+					}
+					.trip-content .content-box .image img{width: 100%;}
+					.trip-content .content-box .image .suggestion{
+						position: absolute;
+						bottom: 0px;
+						left: 0px;
+						padding: 5px 0px 5px 10px;
+						color: #ba9501;
+						background-color: #ffcd04;
+					}
+						.trip-content .content-box .image .suggestion:after{
+							content: ' ';
+							position: absolute;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 32px 0 0 32px;
+							border-color: transparent transparent transparent #ffcd04;
+							line-height: 0px;
+							_border-color: #000000 #000000 #000000 #007bff;
+							_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+							right: -32px;
+							top: 0px;
+						}					
+				.trip-content .content-box .detail{
+					display: block;
+					width: 100%;
+					padding: 15px 15px 15px 165px;
+					box-sizing: border-box;
+				}
+					@media only screen and (max-width: 767px){
+						.trip-content .content-box .detail{
+							display: inline-block;
+							padding: 15px;
+						}
+					}
+					.trip-content .content-box .detail .title{
+						color: #1f6db8;
+						height: 2em;
+						padding-bottom: 15px;
+					}
+					
+					.trip-content .content-box .detail p{
+						/* white-space: nowrap; */
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					
+					.trip-content .content-box .detail .bullet{
+						display: inline-block;
+						width: 100%;
+					}
+						.trip-content .content-box .detail .bullet p{
+							display: inline-block;
+							height: 2em;
+							text-overflow: ellipsis;
+						}
+						.trip-content .content-box .detail .bullet .daypick{
+							float: left;
+							width: 100%;
+						}
+						.trip-content .content-box .detail .bullet .daypick > select{
+							min-width: 120px;
+						}						
+					.trip-content .content-box .detail .buttoncontrol{
+						display: block;
+						width: 100%;
+						padding-top: 15px; 
+					}
+			.trip-content-route{
+				float: left;
+				width: 100%;
+				margin: 10px 0px 10px 15px;
+				border-left: 1px dashed #eeeeee;
+			}
+				.trip-content-route .route{
+					float: left;
+					width: 100%;
+					padding: 10px 15px;
+					box-sizing: border-box;
+				}
+			.trip-buttons{
+				float: left;
+				width: 100%;
+				text-align: center;
+				padding: 15px 0px 3px; 
+			}
+
+	/* Map view */
+	.wrap-tp16-map{
+		padding: 0px;
+		margin-top: 30px;
+		border: 1px solid #eeeeee; 
+	}
+	.tp16-map{
+		position: relative;
+		padding: 0px;
+		max-height: 480px;
+		overflow: hidden;
+	}
+		@media only screen and (max-width: 480px){
+			.tp16-map{
+				min-height: 240px;
+				max-height: 240px;
+			}
+		}
+		@media only screen (ทรื-width: 481px) and (max-width: 992px){
+			.tp16-map{
+				min-height: 320px;
+				max-height: 320px;
+			}
+		}
+		.tp16-map img{
+			min-width: 100%;
+			height: 100%;
+		}
+		.tp16-map .pin{
+			position: absolute;
+			top: 150px;
+			left: 150px;
+			width: 14px;
+			height: 24px;
+			text-align: center;
+			background-image: url(../images/global/pin.png);
+		}
+			.tp16-map .pin .pin-tooltip{
+				position: absolute;
+				top: -44px;
+				left: -350%;
+				width: 120px;
+				background: #ffffff;
+				border-radius: 4px;
+			}
+				.tp16-map .pin .pin-tooltip:after{
+					content: ' ';
+					position: absolute;
+					width: 12px;
+					height: 14px;
+					top: 50%;
+					left: 50%;
+					z-index: 1;
+					background-image: url(../images/global/tooltip-arrow.html);
+					transform: translate(-50%, 100%);
+					-webkit-transform: translate(-50%, 100%);
+					-moz-transform: translate(-50%, 100%);
+					-ms-transform: translate(-50%, 100%);
+					-o-transform: translate(-50%, 100%);					
+				}
+				.tp16-map .pin .pin-tooltip > a{
+					display: inline-block;
+					width: 100%;
+					padding: 5px 8px 0px;
+					color: #1f6db8;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					text-align: center;
+				}
+	ul.tp-map-daypick{
+		max-height: 480px;
+		overflow: auto;
+		padding: 15px;
+		margin: 0px;
+		list-style: none;
+	}
+		@media only screen and (max-width: 480px){
+			ul.tp-map-daypick{max-height: 320px;}
+		}
+		ul.tp-map-daypick li{
+			float: left;
+		}
+		ul.tp-map-daypick li.route{
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 15px;
+			margin-left: 15px;
+			border-left: 1px dashed #eeeeee;
+		}
+			ul.tp-map-daypick li.route .route-detail{
+				float: left;
+			}
+			ul.tp-map-daypick li.route .route-detail span{
+				float: left;
+				width: 24px;
+				margin-right: 5px;
+				font-size: 20px;
+				text-align: center;
+				color: #1f6db8;
+			}
+		ul.tp-map-daypick li.destination{
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 15px 0px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+			ul.tp-map-daypick li.destination a{
+				text-decoration: none;
+			}
+				ul.tp-map-daypick li.destination a.selected:hover{color: #1f6db8;}
+				ul.tp-map-daypick li.destination a.selected{
+					color: #1f6db8;
+					cursor: default;
+				}
+			ul.tp-map-daypick li.destination span{
+				float: left;
+				margin-right: 5px;
+				text-align: center;
+				color: #1f6db8;
+			}
+
+	/* Edit */
+	.edit-period{
+		position: relative;
+		display: inline-block;
+		width: 160px;
+		margin-bottom: 10px;
+		/*vertical-align: middle;*/
+	}
+		@media only screen and (max-width: 767px){
+			.edit-period{
+				width: 100%;
+			}
+		}
+		.edit-period span{
+			top: 8px;
+			right: 10px;
+		}
+	.edit-name{
+		display: inline-block;
+		font-size: 14px;
+		color: #a7a7a7;
+	}
+
+
+
+		/* Pop-Up */
+.overlay-bg{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+	.tp16-modal{
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		z-index: 1000;
+		transform: translate(-50%, 0%);
+		-webkit-transform: translate(-50%, 0%);
+		-moz-transform: translate(-50%, 0%);
+		-ms-transform: translate(-50%, 0%);
+		-o-transform: translate(-50%, 0%);
+		background: #ffffff;
+		max-height: 100%;
+		width: 100%;
+		max-width: 520px;
+		margin: 30px 0px;
+		/*border: 1px solid #eeeeee;*/
+		border-radius: 4px;
+		overflow: hidden;
+	}
+		.tp16-modal .modal-header{
+			position: relative;
+			float: left;
+			width: 100%;
+			background: url(../images/global/pattern_gray.png) repeat #222222;
+		}
+			.tp16-modal .modal-header > a.close-modal{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				font-size: 14px;
+				color: #ffffff;
+			}
+			.tp16-modal .modal-header .heading{
+				float: left;
+				width: 100%;
+				font-size: 20px;
+				color: #ffffff;
+				text-align: center;
+				text-transform: uppercase;
+				padding-top: 30px;
+			}
+		.tp16-modal .modal-body{
+			float: left;
+			width: 100%;
+   			max-height: 500px;
+			padding: 15px;
+			box-sizing: border-box;
+			overflow: auto;
+		}
+			.tp16-modal .modal-body .modal-title{
+				font-size: 24px;
+				color: #4e4e4e;
+				font-weight: bold;
+				padding-bottom: 15px;
+			}
+			.tp16-modal .modal-body > ul{
+				float: left;
+				width: 100%;
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+			}
+				.tp16-modal .modal-body > ul > li{
+					float: left;
+					width: 100%;
+					padding-bottom: 10px;
+				}
+				.tp16-modal .modal-body > ul > li:last-child{
+					padding-bottom: 0px;
+				}
+				.tp16-modal .modal-body .left{float: left;}
+				.tp16-modal .modal-body .right{float: right;};}
+
+/* update : 17/08/28 */
+.scroll-bar-wrap {
+	padding-top: 30px;
+  	/* position: relative; */
+  	/* margin: 2em auto; */
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 20%;
+}
+.scroll-box {
+	width: 100%;
+	height: 100%;
+	/* height: 295px; */
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 30px;
+}
+.scroll-box::-webkit-scrollbar {
+	width: .4em; 
+}
+.scroll-box::-webkit-scrollbar,
+.scroll-box::-webkit-scrollbar-thumb {
+	overflow:visible;
+	border-radius: 4px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,.2); 
+}
+.cover-bar {
+	position: absolute;
+	background: #fff;;
+	height: 100%;  
+	top: 0;
+	right: 15px;
+	width: .4em;
+	-webkit-transition: all .5s;
+	opacity: 1;
+}
+/* MAGIC HAPPENS HERE */
+.scroll-bar-wrap:hover .cover-bar {
+	opacity: 0;
+	-webkit-transition: all .5s;
+}
+
+/* update : 17/08/28 */
+.scroll-bar-wrap {
+	padding-top: 30px;
+  	/* position: relative; */
+  	/* margin: 2em auto; */
+	/* position: fixed; */
+	top: 0;
+	height: 100%;
+	width: 20%;
+}
+.scroll-box {
+	width: 100%;
+	height: 100%;
+	/* height: 295px; */
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-bottom: 30px;
+}
+.scroll-box::-webkit-scrollbar {
+	width: .4em; 
+}
+.scroll-box::-webkit-scrollbar,
+.scroll-box::-webkit-scrollbar-thumb {
+	overflow:visible;
+	border-radius: 4px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,.2); 
+}
+.cover-bar {
+	position: absolute;
+	background: #fff;;
+	height: 100%;  
+	top: 0;
+	right: 15px;
+	width: .4em;
+	-webkit-transition: all .5s;
+	opacity: 1;
+}
+/* MAGIC HAPPENS HERE */
+.scroll-bar-wrap:hover .cover-bar {
+	opacity: 0;
+	-webkit-transition: all .5s;
+}

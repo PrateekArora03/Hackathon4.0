@@ -1,0 +1,87 @@
+/* ============= CATEGORY ============= */
+/* [] 3collumn category : aplly to Catedory and Lifestyle */
+.wrap-categorybox{
+	width:100%;
+	float: left;
+}
+.categorybox-padtop{padding-top:50px; /* + desc's pad-bot <p></p> = 60px */}
+.categorybox{
+	position:relative;
+	padding:0px;
+	margin:0px;
+	cursor:pointer;
+	text-align: center; /* ensures the image is always in the h-middle */
+	overflow: hidden; /* hide the cropped portion */
+}
+	.categorybox img{
+		width:100%;
+		/*height:100%;*/
+		position: relative; /* allows repositioning */
+		left: 100%; /* move the whole width of the image to the right */
+		margin-left: -200%; /* magic! */
+	}
+	
+	.categorybox:hover .hover{
+		opacity:1.0;
+		height:100%;
+	}
+		.categorybox .hover{
+			opacity:0;
+			position:absolute; top:0px; left:0px;
+			z-index:98;
+			width:100%;
+			height:0%;
+			box-sizing:border-box;
+			background:rgba(0,0,0,0.75);
+			transition:all 0.3s ease;
+		}
+			.categorybox .hover .hover-box{
+				float:left;
+				width:100%;
+				padding:0px 5%;
+				box-sizing:border-box;
+			}
+				.categorybox .hover .hover-box p.title{
+					display:inline-block;
+					padding-bottom:5px;
+					padding-left:15px; padding-right:15px;
+					margin:0px;
+					color:#ffffff;
+					font-weight:bold;
+					text-align:center;
+					line-height:1.000em;
+					text-transform:uppercase;
+					border-bottom:5px solid #1f6db8;
+					font-family: 'open_sansbold', Helvetica, Arial, sans-serif;
+					word-wrap:break-word;
+				}
+					@media only screen and (max-width: 767px) {
+						.categorybox .hover .hover-box p.title{
+							font-size:1.231;
+							padding-top:22%;
+						}
+					}
+					@media only screen and (min-width: 768px) {
+						.categorybox .hover .hover-box p.title{
+							font-size:1.231em;
+							padding-top:20%;
+						}
+					}
+					@media only screen and (min-width: 992px) {
+						.categorybox .hover .hover-box p.title{
+							font-size:1.846em;
+							padding-top:21%;
+						}
+					}
+					
+				.categorybox .hover .hover-box p.subtitle{
+					display:block;
+					padding:0px;
+					margin-top:3px;
+					color:#ffffff;
+					font-size:1.000em;
+					text-align:center;
+					font-family: 'open_sansregular', Helvetica, Arial, sans-serif;
+					word-wrap:break-word;
+				}
+				

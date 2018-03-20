@@ -1,0 +1,272 @@
+/* ============= BG TRANSPARENT ============= */
+.overlay-bg {
+	/*display: none;*/
+	position: fixed;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	cursor: pointer;
+	background: #000; /* fallback */
+	background: rgba(0,0,0,0.75);
+	overflow-y: scroll;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	overflow:hidden;
+}
+
+#popup{ /* ADJUST TO CENTER */
+	margin: 0 auto;
+}
+
+/* ============= POPUP CONTAINER ============= */
+.popup-base {
+	background: #fff;
+	padding: 30px;
+	width: 850px;
+	max-width: 1000px;
+	position: relative;
+	cursor: default;
+	box-shadow: 0 0 8px rgba(0,0,0,0.9);
+	border-top: 5px solid #a8c530;
+	border-bottom: 5px solid #a8c530;
+}
+
+/* ============= CLOSE BTN: FLOATING ============= */
+.close-popup{
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin: 0 0 0 430px;
+	cursor: pointer;
+	text-align: right;
+	background: url(../images/close.html) no-repeat top;
+	height: 44px;
+	width: 44px;
+}
+	.close-popup:hover{
+		background: url(../images/close.html) no-repeat bottom;
+	}
+
+
+/* ============= POPUP CONTENT WRAPPER ============= */
+.popup-content{
+	width: 100%;
+}
+	.popup-content .row{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.popup-content p{
+		text-align: justify;
+	}
+	.popup-content h4{
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+
+/* ============= POPUP: EXPANDING WRAPPER ============= */
+.popup-expand-content{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+	/* ============= EXPANING ROW ============= */
+	.popup-expanding{
+		border-bottom: 1px solid #c5c5c5;
+	}
+		.popup-expanding img{
+			margin-right: 15px;
+		}
+		.popup-expanding a:hover,{
+			text-decoration: none;
+		}
+
+		/* ============= EXPANDING TOPIC ============= */
+		.popup-expanding-topic{
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+			.popup-expanding-topic:hover{
+				background-color: #e3e3e3;
+			}
+		/* ============= EXPANDING DETAIL ============= */
+		.popup-expanding-detail{
+			padding: 5px 10px;
+		}
+		.popup-expanding-detail li{
+			margin: 10px 0px;
+		}
+
+
+/* ============= ROUTE TITLE ============= */
+.route-title{
+	font-weight: bold;
+	color: #809b11;
+	font-size: 1.077em; /* 14px */
+}
+.route-map{
+	position: relative;
+	width: 310px;
+	height: 310px;
+}
+	.route-map-external{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 10px 12px;
+		color: #fff;
+
+		background-color: #000;
+		background: rgba(0, 0, 0, .5);
+		filter:alpha(opacity=50); /* IE */
+	    -moz-opacity:0.5; /* Mozilla */
+	}
+	.route-map-external:hover{
+		color: #393939;
+	}
+.route-day{
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #a8c530;
+		color: #848484;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 35px 4px 4px 4px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		background: url(../images/aboutTH/route_day-x.html) no-repeat top;
+	}
+	.route-day:hover, .route-day:active, .route-day:focus{
+		background: url(../images/aboutTH/route_day-x.html) no-repeat bottom;
+		color: #fff;
+		text-decoration: none;
+	}
+	.route-day-select{
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #a8c530;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 35px 4px 4px 4px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		text-align: center;
+		background: url(../images/aboutTH/route_day-x.html) no-repeat bottom;
+	}
+		.route-day-select:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+
+.wrap-related{
+	float: left;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.related-list{
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+}
+	.related-list img{
+		float: left;
+		width: 140px;
+		height: 100px;
+		overflow: hidden;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.related-list .detail{
+		overflow: hidden;
+	}
+		.related-list .detail a{
+			margin-top: 0px;
+		}
+		.related-list .detail p{
+			text-align: left;
+		}
+		.related-list .detail em{
+			margin-right: 5px;
+		}
+
+/* ============= POPUP RECIPES ============= */
+.method-recipe{
+	margin-top: 20px;
+}
+	.method-recipe ul, .method-recipe ol{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 30px;
+	}
+	.method-recipe li{
+		margin: 5px 0px;
+	}
+	
+/* ============= POPUP VIDEO ============= */
+.wrap-popupvideo{
+	/*
+	position: absolute; top: 0px;
+    width: 100%;
+	*/
+	position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+	.wrap-popupvideo.acc{}
+	.wrap-popupvideo.acc .overlay-bg{background:none;}
+	.wrap-popupvideo.acc .popup-video{background:#000000; padding-bottom:80px;}
+	.wrap-popupvideo.acc .popup-video p.title{color:#ffffff;}
+.popup-video{
+	position:relative;
+	z-index:10000;
+	padding-top:60px;
+}
+	.popup-video p.title{text-align:left; color:#1f6db8; padding-top:15px;}
+		.popup-video p > em{font-size:32px;}
+	.popup-video p{color:#ffffff;}
+	.popup-video a.btn-close{float:right; color:#ffffff; font-size:24px; padding-bottom:15px; cursor:pointer;}
+		.popup-video a.btn-close:hover{color:#1f6db8}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}	
+	.video-container iframe, .video-container object, .video-container embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	
+.slide-playvideo{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:yellow;
+	z-index:95;
+	background:rgba(0,0,0,0);
+	transition:all 0.5s ease;
+	cursor:pointer;
+}
+	.slide-playvideo:hover{background:rgba(0,0,0,0.6);}
+	.slide-playvideo > .btn-play{
+		position:absolute; left:50%; top:48%;
+		color:#ffffff;
+		text-align:center;
+		font-size:24px;
+	}
+		@media only screen and (min-width: 767px) {.slide-playvideo > .btn-play{font-size:32px;}}
+		@media only screen and (min-width: 992px) {.slide-playvideo > .btn-play{font-size:48px;}}
+	

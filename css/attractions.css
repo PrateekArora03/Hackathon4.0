@@ -1,0 +1,241 @@
+/* ============= ATTRACTIONS ============= */
+/* [] Thailand Map : Background */
+.background{
+	margin:30px 0px;
+	min-width:100%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+}
+	@media only screen and (max-width: 991px) {
+		.background.north{
+			background:url(../images/hero/hero-index-dest-north.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.northeast{
+			background:url(../images/hero/hero-index-dest-northeast.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.east{
+			background:url(../images/hero/hero-index-dest-east.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.central{
+			background:url(../images/hero/hero-index-dest-cantral.html) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.south{
+			background:url(../images/hero/hero-index-dest-south.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+	}
+	@media only screen and (max-width: 991px) {
+		.background.north{
+			background:url(../images/hero/hero-index-dest-north.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.northeast{
+			background:url(../images/hero/hero-index-dest-northeast.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.east{
+			background:url(../images/hero/hero-index-dest-east.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.central{
+			background:url(../images/hero/hero-index-dest-central.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+		.background.south{
+			background:url(../images/hero/hero-index-dest-south.jpg) no-repeat center center;
+			background-size:100% 100%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.background.north{
+			background:url(../images/hero/hero-index-dest-north.jpg) no-repeat center center;
+			background-size:100%;
+		}
+		.background.northeast{
+			background:url(../images/hero/hero-index-dest-northeast.jpg) no-repeat center center;
+			background-size:100%;
+		}
+		.background.east{
+			background:url(../images/hero/hero-index-dest-east.jpg) no-repeat center center;
+			background-size:100%;
+		}
+		.background.central{
+			background:url(../images/hero/hero-index-dest-central.jpg) no-repeat center center;
+			background-size:100%;
+		}
+		.background.south{
+			background:url(../images/hero/hero-index-dest-south.jpg) no-repeat center center;
+			background-size:100%;
+		}
+	}
+
+
+/* [] Thailand Map : LEFT */
+.wrap-thailandmap{
+	float:left;
+	width:100%;
+	height:500px;
+}
+	.wrap-thailandmap .thailandmap{
+		position:relative;
+		margin:0px auto;
+		width:300px;
+		height:440px;
+		background:url(../images/global/countrymap/thailandmap-lg.png) no-repeat;
+	}
+		.wrap-thailandmap .thailandmap.north{
+			background:url(../images/global/countrymap/thailandmap-lg-north.png) no-repeat center center;
+		}
+		.wrap-thailandmap .thailandmap.northeast{
+			background:url(../images/global/countrymap/thailandmap-lg-northeast.png) no-repeat center center;
+		}
+		.wrap-thailandmap .thailandmap.east{
+			background:url(../images/global/countrymap/thailandmap-lg-east.png) no-repeat center center;
+		}
+		.wrap-thailandmap .thailandmap.central{
+			background:url(../images/global/countrymap/thailandmap-lg-central.png) no-repeat center center;
+		}
+		.wrap-thailandmap .thailandmap.south{
+			background:url(../images/global/countrymap/thailandmap-lg-south.png) no-repeat center center;
+		}
+	
+	.wrap-thailandmap .thailandmap .btn{
+		background-color:#4e4e4e;
+		-webkit-box-shadow:2px 2px 2px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow:2px 2px 2px 0px rgba(0,0,0,0.2);
+		box-shadow:2px 2px 2px 0px rgba(0,0,0,0.2);
+		transition:all 0.5s ease;
+	}
+		.wrap-thailandmap .thailandmap .btn:hover{background:#1f6db8;}
+		.wrap-thailandmap .thailandmap .btn.current{background:#1f6db8; cursor:default;}
+		
+		.wrap-thailandmap .thailandmap .btn.north{position:absolute; top:10px; left:-5px;}
+		.wrap-thailandmap .thailandmap .btn.northeast{position:absolute; top:90px; left:163px;}
+		.wrap-thailandmap .thailandmap .btn.east{position:absolute; top:175px; left:150px;}
+		.wrap-thailandmap .thailandmap .btn.central{position:absolute; top:150px; left:-6px;}
+		.wrap-thailandmap .thailandmap .btn.south{position:absolute; top:320px; left:65px;}
+	
+	
+/* [] Region : RIGHT */
+.wrap-region{
+	width:100%;
+	box-sizing:border-box;
+	background: rgba(0,0,0,0.8);
+	
+}
+	@media only screen and (max-width: 767px) {
+		.wrap-region{
+			height:auto;
+			border-top:1px dashed #eeeeee;
+			padding:0px 15px 0px 15px;
+			background: rgba(0,0,0,0.2);
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.wrap-region{
+			height:480px;
+			border-left:1px dashed #eeeeee;
+			padding:30px 30px 0px 15px;
+		}
+	}
+	
+.region-north{display:block;}
+.region-northeast{display:none;}
+.region-east{display:none;}
+.region-central{display:none;}
+.region-south{display:none;}
+
+	.wrap-region .title{
+		float:left;
+		width:100%;
+		padding: 80px 0 25px 45px;
+		font-family: 'Open Sans Condensed', 'open_sans_condensedbold', 'Myriad Pro', sans-serif;
+		font-size: 1.846em; /* 24px */
+		color: #ADA9A9;
+		text-align:left;
+		text-transform: uppercase;
+		background:url(../images/global/countrymap/thailandmap-sm.png) no-repeat;
+		background-position-x:5px;
+	}
+		.wrap-region .title.north{
+			background:url(../images/global/countrymap/thailandmap-sm-north.png) no-repeat;
+			background-position-x:5px;
+		}
+		.wrap-region .title.northeast{
+			background:url(../images/global/countrymap/thailandmap-sm-northeast.png) no-repeat;
+			background-position-x:5px;
+		}
+		.wrap-region .title.east{
+			background:url(../images/global/countrymap/thailandmap-sm-east.png) no-repeat;
+			background-position-x:5px;
+		}
+		.wrap-region .title.central{
+			background:url(../images/global/countrymap/thailandmap-sm-central.png) no-repeat;
+			background-position-x:5px;
+		}
+		.wrap-region .title.south{
+			background:url(../images/global/countrymap/thailandmap-sm-south.png) no-repeat;
+			background-position-x:5px;
+		}
+		
+	.wrap-region ul{
+		float:left;
+		width:100%;
+		padding:0px;
+		margin:0px;
+		list-style:none;
+		transition:all 0.5s ease;
+	}
+	.wrap-region li{
+		float:left;
+		padding-left:15px;
+		padding-bottom:5px;
+		text-align:left;
+		cursor:pointer;
+	}
+		@media only screen and (max-width: 767px) {.wrap-region li{width:33.3333%;}}
+		@media only screen and (min-width: 768px) {.wrap-region li{width:50%;}}
+		.wrap-region > ul:hover > li:not(:hover){opacity: 0.6;}
+	.wrap-region a{
+		float:left;
+		color:#ADA9A9;
+		font-size:1.077em;
+		text-decoration:none;
+		transition:all 0.5s ease;
+		transition-delay:0s;
+		cursor:pointer;
+	}
+	
+/* [] Region Menu : RIGHT : Selector */
+ul.wrap-region-menu{
+	margin:0px auto;
+	width:100%;
+	padding:30px 0px;
+	box-sizing:border-box;
+	border-bottom:1px dashed #dddddd;
+	list-style:none;
+}
+	ul.wrap-region-menu > li{
+		float:left;
+		width:20%;
+		padding:0px;
+		margin:0px;
+		font-size: 1.385em; /* 18px */
+		font-weight:bold;
+		text-align:center;
+		text-decoration:none;
+		text-transform:uppercase;
+	}
+	ul.wrap-region-menu > li.current{
+		color:#1f6db8;
+	}
+		ul.wrap-region-menu > li > a{
+			text-decoration:none;
+			cursor:pointer;
+		}
